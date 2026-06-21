@@ -3,153 +3,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chinaway | Making China Easier to Explore</title>
+<title>Chinaway | China Travel Guide for Europeans</title>
 
 <style>
 body{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #222;
-    background: #fafafa;
+    margin:0;
+    line-height:1.6;
+    color:#222;
+    background:#fafafa;
 }
-
+nav{
+    background:white;
+    padding:16px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+}
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#c1121f;
+}
 header{
-    background: #c1121f;
-    color: white;
-    text-align: center;
-    padding: 70px 20px;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
 }
-
 header h1{
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size:56px;
+    margin-bottom:10px;
 }
-
 header p{
-    font-size: 20px;
-    max-width: 750px;
-    margin: 10px auto;
+    font-size:21px;
+    max-width:760px;
+    margin:12px auto;
 }
-
+.btn{
+    display:inline-block;
+    background:#c1121f;
+    color:white;
+    padding:13px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-top:18px;
+    font-weight:bold;
+}
 section{
-    max-width: 1000px;
-    margin: auto;
-    padding: 45px 20px;
+    max-width:1050px;
+    margin:auto;
+    padding:55px 20px;
 }
-
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
 .card{
-    background: white;
-    padding: 22px;
-    margin: 16px 0;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background:white;
+    padding:24px;
+    border-radius:14px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
-
 .card h3{
-    margin-top: 0;
-    color: #c1121f;
+    color:#c1121f;
+    margin-top:0;
 }
-
+.contact{
+    background:#fff3f3;
+    border-radius:16px;
+    padding:35px;
+    text-align:center;
+}
 footer{
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 25px 20px;
-    margin-top: 30px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:28px 20px;
 }
-
-.tagline{
-    font-weight: bold;
+.chat{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    background:#c1121f;
+    color:white;
+    padding:14px 18px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+<div class="logo">ChinaWay</div>
+<div>
+<a href="#guides">Guides</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
 <header>
-<h1>Chinaway</h1>
-
-<p class="tagline">
-Making China Easier to Explore
-</p>
-
-<p>
-Practical travel guides, local insights and essential tips for European travellers visiting China.
-</p>
+<h1>ChinaWay</h1>
+<p>Making China Easier to Explore</p>
+<p>Practical China travel guides, local insights and planning tips for European travellers.</p>
+<a class="btn" href="#guides">Start Planning</a>
 </header>
 
 <section>
-<h2>Welcome to Chinaway</h2>
-
+<h2>Welcome to ChinaWay</h2>
 <p>
-China is one of the most exciting destinations in the world, but planning a trip can feel overwhelming for first-time visitors.
-Questions about visas, mobile payments, trains, internet access and language barriers often make travelling to China seem more difficult than it really is.
+China is one of the most exciting destinations in the world, but planning a first trip can feel confusing.
+Questions about visas, mobile payments, train tickets, internet access and language barriers often make China seem harder to travel than it really is.
 </p>
-
 <p>
-Chinaway was created to bridge that gap and help European travellers explore China independently, smoothly and with confidence.
+ChinaWay helps European travellers explore China independently, smoothly and with confidence.
 </p>
 </section>
 
-<section>
+<section id="guides">
 <h2>Start Here</h2>
 
+<div class="grid">
 <div class="card">
 <h3>Visa-Free Entry to China</h3>
-<p>
-Understand the latest visa-free entry rules and what European travellers should prepare before departure.
-</p>
+<p>Understand entry rules and what European travellers should prepare before departure.</p>
 </div>
 
 <div class="card">
-<h3>How to Use Alipay & WeChat Pay</h3>
-<p>
-A practical step-by-step guide to setting up mobile payments in China as a foreign visitor.
-</p>
+<h3>Alipay & WeChat Pay</h3>
+<p>Step-by-step guidance for setting up mobile payments as a foreign visitor.</p>
 </div>
 
 <div class="card">
-<h3>China High-Speed Rail Guide</h3>
-<p>
-Learn how to book tickets, choose routes and travel between Chinese cities by high-speed train.
-</p>
+<h3>High-Speed Rail Guide</h3>
+<p>How to book tickets, choose routes and travel between Chinese cities by train.</p>
 </div>
 
 <div class="card">
-<h3>Best Apps for China Travel</h3>
-<p>
-Essential apps for payments, translation, maps, transport, food delivery and everyday travel.
-</p>
+<h3>Best Apps for China</h3>
+<p>Essential apps for payments, translation, maps, transport and daily travel.</p>
+</div>
 </div>
 </section>
 
-<section>
-<h2>About Chinaway</h2>
-
+<section id="about">
+<h2>About ChinaWay</h2>
 <p>
-Chinaway is created by a Chinese native speaker based in the Netherlands for more than 11 years.
+ChinaWay is created by a Chinese native speaker based in the Netherlands for more than 11 years.
+With experience living in both Europe and China, ChinaWay provides practical, honest and easy-to-understand travel information for European visitors.
 </p>
-
-<p>
-With experience living in both Europe and China, Chinaway provides practical, honest and easy-to-understand travel information for European visitors.
-</p>
-
 <p>
 Languages: English, Dutch, Mandarin and Cantonese.
 </p>
 </section>
 
-<footer>
+<section id="contact">
+<div class="contact">
+<h2>Need Help Planning Your China Trip?</h2>
 <p>
-Chinaway – Making China Easier to Explore
+Have questions about payments, itinerary planning, transport or travel preparation?
+Send a message and I will get back to you.
 </p>
+<a class="btn" href="mailto:lvliugirl@gmail.com?subject=ChinaWay Travel Question">
+Contact ChinaWay
+</a>
+</div>
+</section>
 
-<p>
-© 2026 Chinaway
-</p>
+<footer>
+<p>ChinaWay – Making China Easier to Explore</p>
+<p>© 2026 ChinaWay</p>
 </footer>
+
+<a class="chat" href="mailto:lvliugirl@gmail.com?subject=ChinaWay Online Chat">
+Online Chat
+</a>
 
 </body>
 </html>
